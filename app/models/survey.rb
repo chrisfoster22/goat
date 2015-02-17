@@ -17,4 +17,28 @@ class Survey < ActiveRecord::Base
       q.question_type != "Choice" || q.options.length > 0
     end
   end
+
+
+    # Find all survey names, and show their author's email addresses with them
+
+
+
+
+
+
 end
+
+
+
+
+
+
+#
+# def self.all_with_authors
+#   array = []
+#   surveys = Survey.all
+#   surveys.each do |s|
+#     array << s.title + " | " + s.author.name + " | " + s.author.email
+#   end
+#   puts array.join("\n")
+# end
